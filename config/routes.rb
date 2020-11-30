@@ -6,5 +6,6 @@ root to: 'pages#home'
   resources :prises , only: [:index, :new, :create, :show, :update, :edit, :destroy]
   resources :ambassadeurs , only: [:index, :new, :create, :show, :update, :edit, :destroy]
   get    '/mentions'      => 'pages#mentions'
+  get    '/amis'      => 'pages#amis'
 
 end
