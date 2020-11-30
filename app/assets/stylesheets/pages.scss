@@ -26,7 +26,7 @@
 
 .lock-item img{
   width:30px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .link-footer a{
@@ -44,31 +44,84 @@
 
 }
 
+@media (min-width: 399px) {
 .description{
-  font-family: Cabin;
-  font-style: normal;
-  font-weight: bold;
   font-size: 23px;
-  line-height: 28px;
+  line-height: 32px;
   width: 398px;
   height: 196px;
   color: #FFFFFF;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
   margin: 50px;
-}
+}}
 
-.title{
+@media (max-width: 600px) {
+  .header-element{
+  display: flex;
+
+  justify-content: center !important;
+  align-items: center;
+}}
+
+@media (max-width: 350px) {
+  .container-ok{
+  width: 300px;
+}}
+
+@media (max-width: 399px) {
+  .landing-page img{
+  width: 315px !important;
+  height: auto;
+  object-fit: cover;
+  margin: 30px;
+}}
+
+@media (max-width: 399px) {
+  .title{
+
+  color: #FFFFFF;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
+  margin: 30px;
+  font-size: 50px;
+}}
+
+@media (max-width: 400px) {
+  .description{
+
+  color: #FFFFFF;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  margin: 30px;
+  font-size: 18px;
+}}
+
+@media (max-width: 1115px) {
+  .landing-page{
+  display: flex;
+  flex-direction:column;
+  justify-content: center !important;
+  align-items: center;
+}}
+
+@media (min-width: 400px) {
+.title{
   font-size: 72px;
   line-height: 108px;
   margin: 50px;
   color: #FFFFFF;
-}
+    font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+}}
 
 .logo-qq img {
   width: 50px;
-  margin: 10px;
+  margin: 20px;
   height: auto;
   display:flex !important;
   justify-content: space-between !important;
@@ -96,11 +149,35 @@ margin:20px;
   justify-content: space-between !important;
 }
 
+.dropdown-menu a {
+color: black;
+text-decoration:none;
+font-size: 15px;
+line-height: 23px;
+}
+
+.dropdown-menu a:hover {
+color: red;
+text-decoration:none;
+
+}
+
+.dropdown-menu li{
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 23px;
+text-align: center;
+margin: 20px;
+color: black;
+}
+
+
 .header-element{
   display: flex;
   justify-content: center !important;
   align-items: center;
-
 }
 
 .info {
@@ -108,13 +185,24 @@ margin:20px;
   flex-direction: column;
 }
 
+@media (min-width: 400px) and  (max-width: 630px){
+.landing-page img {
+  width: 403px;
+  height: auto;
+  object-fit: cover;
+  margin: 50px;
+
+}}
+
+@media (min-width: 631px){
 .landing-page img {
   width: 553px;
   height: 609px;
   object-fit: cover;
   margin: 50px;
 
-}
+}}
+
 button  img {
 width: 50px;
 height: auto;
