@@ -1,0 +1,2 @@
+class Ambassadeur < ApplicationRecord
+end

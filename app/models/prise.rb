@@ -1,0 +1,2 @@
+class Prise < ApplicationRecord
+end

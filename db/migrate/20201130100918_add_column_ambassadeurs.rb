@@ -1,0 +1,39 @@
+class AddColumnAmbassadeurs < ActiveRecord::Migration[6.0]
+  def change
+     add_column :ambassadeurs, :img1_a, :text
+     add_column :ambassadeurs, :img2_a, :text
+     add_column :ambassadeurs, :img3_a, :text
+     add_column :ambassadeurs, :img4_a, :text
+     add_column :ambassadeurs, :img5_a, :text
+     add_column :ambassadeurs, :img6_a, :text
+     add_column :ambassadeurs, :img7_a, :text
+     add_column :ambassadeurs, :img8_a, :text
+     add_column :ambassadeurs, :img9_a, :text
+     add_column :ambassadeurs, :img10_a, :text
+     add_column :ambassadeurs, :paraph1_a, :text
+     add_column :ambassadeurs, :paraph2_a, :text
+     add_column :ambassadeurs, :paraph3_a, :text
+     add_column :ambassadeurs, :paraph4_a, :text
+     add_column :ambassadeurs, :paraph5_a, :text
+     add_column :ambassadeurs, :legend1_a, :text
+     add_column :ambassadeurs, :legend2_a, :text
+     add_column :ambassadeurs, :legend3_a, :text
+     add_column :ambassadeurs, :legend4_a, :text
+     add_column :ambassadeurs, :legend5_a, :text
+     add_column :ambassadeurs, :legend6_a, :text
+     add_column :ambassadeurs, :legend7_a, :text
+     add_column :ambassadeurs, :legend8_a, :text
+     add_column :ambassadeurs, :legend9_a, :text
+     add_column :ambassadeurs, :legend10_a, :text
+     add_column :ambassadeurs, :date_a, :text
+     add_column :ambassadeurs, :lieu_a, :text
+     add_column :ambassadeurs, :nom_ambassadeur, :text
+     add_column :ambassadeurs, :nom_auteur_a, :text
+     add_column :ambassadeurs, :titre_a, :text
+     add_column :ambassadeurs, :sous_titre_a, :text
+     add_column :ambassadeurs, :avatar_img_a, :text
+     add_column :ambassadeurs, :lien_url1_a, :text
+     add_column :ambassadeurs, :lien_url2_a, :text
+     add_column :ambassadeurs, :video_a, :text
+  end
+end

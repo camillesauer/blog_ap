@@ -1,0 +1,2 @@
+module AmbassadeursHelper
+end
