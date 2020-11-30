@@ -1,4 +1,22 @@
-
+<div class="container-ok">
 <%= render "components/header" %>
-<%= render "components/footer" %>
+<body style="background-color:#FA0606;">
+<div class="landing-page">
+  <div class="info">
+    <h1 class="title">
+      Bienvenue <br>
+      sur notre <br>
+      blog ! <br>
+    </h1>
+    <p class="description">
+     Art Prise, Place à la culture de demain! est une association à but non lucratif qui accompagne
+      les artistes plasticiens professionnels en début de carrière dans leur professionnalisation et
+      dans l’acquisition de nouvelles compétences afin de compléter leur acquis.
+    </p>
 
+  </div>
+  <%= image_tag("img-landing.jpg", alt: "Art Prise, Place à la culture de demain!")%>
+</div>
+<%= render "components/footer" %>
+</body>
+</div>
