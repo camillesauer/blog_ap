@@ -1,2 +1,33 @@
 <%= render "components/header" %>
+
+<% if user_signed_in? %>
+<div class="btn btn-light btn-banner-p"><%= link_to "Ajouter un Prise", new_prise_path %></div>
+<% end %>
+
+<div class="display-grid-card">
+  <% @prise.each do |prise| %>
+    <div class="prise">
+      <% if user_signed_in? %>
+        <div class ="">
+          <%= link_to 'Supprimer', prise_path(prise),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+          <%= link_to "Editer", edit_prise_path(prise.id)%>
+        </div>
+      <% end %>
+          <div class="linear">
+            <%= link_to(image_tag("#{prise.img_p1}", alt: "Art Prise, Place à la culture de demain!"), prise_path(prise.id)) %>
+            <h1><%= prise.titre_p %></h1>
+            <div class="info_p">
+            <h4 class=""><%= prise.date_p %></h4>
+            <h5 class=""><%= prise.lieu_p %></h5>
+            </div>
+          </div>
+    </div>
+</div>
+
+    </div>
+  <% end %>
+</div>
+
 <%= render "components/footer" %>

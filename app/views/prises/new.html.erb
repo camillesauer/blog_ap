@@ -1,1 +1,80 @@
-new.html.erb
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@prise) do |f| %>
+
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+          <h3 class="title-new">Ajouter un Prise</h3>
+
+           <%= f.input :titre_p %>
+           <%= f.input :sous_titre_p %>
+           <%= f.input :date_p %>
+           <%= f.input :lieu_p %>
+           <%= f.input :lien_url1_p %>
+           <%= f.input :lien_url2_p %>
+           <%= f.input :video_p %>
+           <%= f.input :img_p1 %>
+           <%= f.input :img_p2 %>
+           <%= f.input :img_p3 %>
+           <%= f.input :img_p4 %>
+           <%= f.input :img_p5 %>
+           <%= f.input :legend_p1 %>
+           <%= f.input :legend_p2 %>
+           <%= f.input :legend_p3 %>
+           <%= f.input :legend_p4 %>
+           <%= f.input :legend_p5 %>
+           <%= f.input :avatar_img_p1 %>
+           <%= f.input :avatar_name_p1 %>
+           <%= f.input :avatar_url_p1 %>
+           <%= f.input :avatar_titre_p1 %>
+           <%= f.input :avatar_img_p2 %>
+           <%= f.input :avatar_name_p2 %>
+           <%= f.input :avatar_url_p2 %>
+           <%= f.input :avatar_titre_p2 %>
+           <%= f.input :avatar_img_p3 %>
+           <%= f.input :avatar_name_p3 %>
+           <%= f.input :avatar_url_p3 %>
+           <%= f.input :avatar_titre_p3 %>
+           <%= f.input :avatar_img_p4 %>
+           <%= f.input :avatar_name_p4 %>
+           <%= f.input :avatar_url_p4 %>
+           <%= f.input :avatar_titre_p4 %>
+           <%= f.input :avatar_img_p5 %>
+           <%= f.input :avatar_name_p5 %>
+           <%= f.input :avatar_url_p5 %>
+           <%= f.input :avatar_titre_p5 %>
+           <%= f.input :avatar_img_p6 %>
+           <%= f.input :avatar_name_p6 %>
+           <%= f.input :avatar_url_p6 %>
+           <%= f.input :avatar_titre_p6 %>
+           <%= f.input :avatar_img_p7 %>
+           <%= f.input :avatar_name_p7 %>
+           <%= f.input :avatar_url_p7 %>
+           <%= f.input :avatar_titre_p7 %>
+           <%= f.input :avatar_img_p8 %>
+           <%= f.input :avatar_name_p8 %>
+           <%= f.input :avatar_url_p8 %>
+           <%= f.input :avatar_titre_p8 %>
+           <%= f.input :avatar_img_p9 %>
+           <%= f.input :avatar_name_p9 %>
+           <%= f.input :avatar_url_p9 %>
+           <%= f.input :avatar_titre_p9 %>
+           <%= f.input :avatar_img_p10 %>
+          <%= f.input :avatar_name_p10 %>
+          <%= f.input :avatar_url_p10 %>
+          <%= f.input :avatar_titre_p10 %>
+           <%= f.input :introduction_p1 %>
+           <%= f.input :paraph_p1 %>
+           <%= f.input :paraph_p2 %>
+           <%= f.input :paraph_p3 %>
+           <%= f.input :paraph_p4 %>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.button :submit, class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
+</div>
