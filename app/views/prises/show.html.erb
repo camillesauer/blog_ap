@@ -1,1 +1,93 @@
-show.html.erb
+
+<%= render "components/header" %>
+<br>
+<br>
+<div class="index_p">
+<h1 class="title-pp"><%= @prise.titre_p %></h1>
+  <iframe width="930" height="560"
+    src="<%= @prise.video_p %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <br>
+  <br>
+  <h1 class="title-pp">INTRODUCTION</h1>
+  <% if @prise.introduction_p1 != ""  %>
+  <p><%= @prise.introduction_p1 %></p>
+  <% end %>
+  <br>
+  <br>
+  <h1 class="title-pp">PROGRAMME</h1>
+  <% if @prise.paraph_p1 != ""  %>
+  <p><%= @prise.paraph_p1 %></p>
+  <% end %>
+  <br>
+  <% if @prise.img_p1 != ""  %>
+  <%= image_tag("#{@prise.img_p1}") %>
+  <% end %>
+<% if @prise.legend_p1 != ""  %>
+  <h5><%= @prise.legend_p1 %></h5>
+  <% end %>
+<br>
+  <br>
+  <% if @prise.paraph_p2 != ""  %>
+  <p><%= @prise.paraph_p2 %></p>
+  <% end %>
+  <br>
+  <% if @prise.img_p2 != ""  %>
+  <%= image_tag("#{@prise.img_p2}") %>
+  <% end %>
+  <% if @prise.legend_p2 != ""  %>
+  <h5><%= @prise.legend_p2 %></h5>
+  <% end %>
+  <br>
+  <% if @prise.paraph_p3 != ""  %>
+  <p><%= @prise.paraph_p3 %></p>
+  <% end %>
+  <br>
+  <% if @prise.img_p3 != ""  %>
+  <%= image_tag("#{@prise.img_p3}") %>
+  <% end %>
+  <% if @prise.legend_p3 != ""  %>
+  <h5><%= @prise.legend_p3 %></h5>
+  <% end %>
+  <br>
+  <% if @prise.img_p4 != ""  %>
+  <%= image_tag("#{@prise.img_p4}") %>
+  <% end %>
+  <% if @prise.legend_p4 != ""  %>
+  <h5><%= @prise.legend_p4 %></h5>
+  <% end %>
+  <br>
+   <% if @prise.img_p5 != ""  %>
+   <%= image_tag("#{@prise.img_p5}") %>
+   <% end %>
+   <% if @prise.legend_p5!= ""  %>
+  <h5><%= @prise.legend_p5 %></h5>
+  <% end %>
+<br>
+<br>
+  <h1 class="title-pp">INTERVENANTS</h1>
+  <% if @prise.paraph_p4 != ""  %>
+  <p><%= @prise.paraph_p4 %></p>
+  <% end %>
+
+<div class="avatar-p">
+  <% if @prise.avatar_img_p2 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p1}") %>
+  <% end %>
+ <% if @prise.avatar_name_p1 != ""  %>
+  <p><%= @prise.avatar_name_p1%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p1 != ""  %>
+  <p><%= @prise.avatar_titre_p1%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p1 != ""  %>
+  <a><%= @prise.avatar_url_p1%></a>
+  <% end %>
+</div>
+</div>
+<br>
+<br>
+<%= render "components/footer" %>

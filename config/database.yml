@@ -25,6 +25,17 @@ development:
   <<: *default
   database: blog_ap_development
 
+production:
+  <<: *default
+  database: d8vf1l5nccjkjd
+  username: padulopgteylwb
+  password: 1a793da17a4e6617390085487bdc349ec7990d3af8703fcbf4e506ef315d5559
+  host: ec2-52-214-38-135.eu-west-1.compute.amazonaws.com
+  adapter: postgresql
+  port: 5432
+  DATABASE_URL=: postgres://padulopgteylwb:1a793da17a4e6617390085487bdc349ec7990d3af8703fcbf4e506ef315d5559@ec2-52-214-38-135.eu-west-1.compute.amazonaws.com:5432/d8vf1l5nccjkjd
+
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
