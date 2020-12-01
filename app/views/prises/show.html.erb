@@ -2,7 +2,7 @@
 <%= render "components/header" %>
 <br>
 <br>
-<div class="index_p">
+<div id="index_p">
 <h1 class="title-pp"><%= @prise.titre_p %></h1>
   <iframe width="930" height="560"
     src="<%= @prise.video_p %>"
@@ -11,12 +11,10 @@
     allowfullscreen>
   </iframe>
   <br>
-  <br>
   <h1 class="title-pp">INTRODUCTION</h1>
   <% if @prise.introduction_p1 != ""  %>
   <p><%= @prise.introduction_p1 %></p>
   <% end %>
-  <br>
   <br>
   <h1 class="title-pp">PROGRAMME</h1>
   <% if @prise.paraph_p1 != ""  %>
@@ -67,27 +65,156 @@
   <h5><%= @prise.legend_p5 %></h5>
   <% end %>
 <br>
-<br>
   <h1 class="title-pp">INTERVENANTS</h1>
   <% if @prise.paraph_p4 != ""  %>
   <p><%= @prise.paraph_p4 %></p>
   <% end %>
+</div>
 
-<div class="avatar-p">
-  <% if @prise.avatar_img_p2 != ""  %>
+<div class="grid-avatar">
+<div id="avatar-p">
+  <% if @prise.avatar_img_p1 != ""  %>
   <%= image_tag("#{@prise.avatar_img_p1}") %>
   <% end %>
  <% if @prise.avatar_name_p1 != ""  %>
-  <p><%= @prise.avatar_name_p1%></p>
+  <p class="avatar-titre"><%= @prise.avatar_name_p1%></p>
   <% end %>
    <% if @prise.avatar_titre_p1 != ""  %>
   <p><%= @prise.avatar_titre_p1%></p>
   <% end %>
    <% if @prise.avatar_titre_p1 != ""  %>
-  <a><%= @prise.avatar_url_p1%></a>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p1%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p2 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p2}") %>
+  <% end %>
+ <% if @prise.avatar_name_p2 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p2%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p2 != ""  %>
+  <p><%= @prise.avatar_titre_p2%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p2 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p2%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p3 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p3}") %>
+  <% end %>
+ <% if @prise.avatar_name_p3 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p3%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p3 != ""  %>
+  <p><%= @prise.avatar_titre_p3%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p3 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p3%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p4 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p4}") %>
+  <% end %>
+ <% if @prise.avatar_name_p4 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p4%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p4 != ""  %>
+  <p><%= @prise.avatar_titre_p4%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p4 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p4%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p5 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p5}") %>
+  <% end %>
+ <% if @prise.avatar_name_p5 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p5%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p5 != ""  %>
+  <p><%= @prise.avatar_titre_p5%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p5 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p5%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p6 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p6}") %>
+  <% end %>
+ <% if @prise.avatar_name_p6 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p6%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p6 != ""  %>
+  <p><%= @prise.avatar_titre_p6%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p6 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p6%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p7 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p7}") %>
+  <% end %>
+ <% if @prise.avatar_name_p7 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p7%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p7 != ""  %>
+  <p><%= @prise.avatar_titre_p7%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p7 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p7%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p8 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p8}") %>
+  <% end %>
+ <% if @prise.avatar_name_p8 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p8%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p8 != ""  %>
+  <p><%= @prise.avatar_titre_p8%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p8 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p8%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p9 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p9}") %>
+  <% end %>
+ <% if @prise.avatar_name_p9 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p9%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p9 != ""  %>
+  <p><%= @prise.avatar_titre_p9%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p9 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p9%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @prise.avatar_img_p10 != ""  %>
+  <%= image_tag("#{@prise.avatar_img_p10}") %>
+  <% end %>
+ <% if @prise.avatar_name_p10 != ""  %>
+  <p class="avatar-titre"><%= @prise.avatar_name_p10%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p10 != ""  %>
+  <p><%= @prise.avatar_titre_p10%></p>
+  <% end %>
+   <% if @prise.avatar_titre_p10 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @prise.avatar_url_p10%></div>
   <% end %>
 </div>
 </div>
+
+
 <br>
 <br>
 <%= render "components/footer" %>

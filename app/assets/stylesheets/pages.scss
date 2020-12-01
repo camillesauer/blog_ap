@@ -402,10 +402,50 @@ padding: 40px !important;
   position: relative;
 }
 
-@media screen and (max-width: 990px) {
-.display-grid-card{
+@media screen and (max-width: 599px) {
+.grid-avatar{
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+.grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and (min-width: 1300px) {
+.grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and (min-width: 1400px) {
+.grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and (min-width: 1600px) {
+.grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
 }
@@ -413,7 +453,7 @@ padding: 40px !important;
 
 
 @media screen and (max-width: 440px) {
-.index_p iframe{
+#index_p iframe{
   border-radius:20px;
   height: 250px;
   width: 300px !important;
@@ -422,7 +462,7 @@ padding: 40px !important;
 }}
 
 @media screen and (max-width: 990px) {
-.index_p iframe{
+#index_p iframe{
   border-radius:20px;
   height: 300px;
   width: 437px;
@@ -484,7 +524,13 @@ line-height: 27px;
 margin-left: 30px;
 
 }
-.index_p{
+#index_p{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.index_2{
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -511,9 +557,53 @@ color:red;
     margin-top: 30px;
 }}
 
+@media screen and (max-width: 440px) {
+.index_2 iframe{
+  border-radius:20px;
+  height: 250px;
+  width: 300px !important;
+  text-align:center;
+  margin-bottom: 50px;
+}}
+
+@media screen and (max-width: 990px) {
+.index_2 iframe{
+  border-radius:20px;
+  height: 300px;
+  width: 437px;
+  text-align:center;
+  margin-bottom: 50px;
+}}
 
 @media screen and (min-width: 991px) {
-.index_p iframe{
+.index_2 iframe{
+  border-radius:20px;
+  height: 480px;
+  width: 930px;
+  text-align:center;
+  margin-bottom: 50px;
+}}
+
+@media screen and (max-width: 440px) {
+#index_p iframe{
+  border-radius:20px;
+  height: 250px;
+  width: 300px !important;
+  text-align:center;
+  margin-bottom: 50px;
+}}
+
+@media screen and (max-width: 990px) {
+#index_p iframe{
+  border-radius:20px;
+  height: 300px;
+  width: 437px;
+  text-align:center;
+  margin-bottom: 50px;
+}}
+
+@media screen and (min-width: 991px) {
+#index_p iframe{
   border-radius:20px;
   height: 480px;
   width: 930px;
@@ -522,34 +612,37 @@ color:red;
 }}
 
 @media screen and (min-width: 991px) {
-.index_p img{
+#index_p img{
   border-radius:20px;
   height: 480px;
   width: 930px;
   text-align:center;
   margin-bottom: 20px;
+  object-fit: cover;
 }}
 
 @media screen and (max-width: 440px) {
-.index_p img{
+#index_p img{
   border-radius:20px;
   height: 250px;
   width: 300px !important;
   text-align:center;
   margin-bottom: 20px;
+  object-fit: cover;
 }}
 
 @media screen and (max-width: 990px) {
-.index_p img{
+#index_p img{
   border-radius:20px;
   height: 300px;
   width: 437px;
   text-align:center;
   margin-bottom: 20px;
+  object-fit: cover;
 }}
 
 @media screen and (min-width: 991px) {
-.index_p p{
+#index_p p{
   height: auto;
   width: 930px;
   margin-bottom: 50px;
@@ -557,11 +650,12 @@ color:red;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
+  padding: 10px;
 }}
 
 @media screen and (max-width: 440px) {
-.index_p p{
+#index_p p{
   height: auto;
   width: 300px !important;
   margin-bottom: 50px;
@@ -569,11 +663,12 @@ color:red;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
+  padding: 10px;
 }}
 
 @media screen and (max-width: 990px) {
-.index_p p{
+#index_p p{
   height: auto;
   width: 437px;
   margin-bottom: 50px;
@@ -581,11 +676,13 @@ color:red;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
+  padding: 10px;
 }}
 
+
 @media screen and (min-width: 991px) {
-.index_p h5{
+#index_p h5{
   height: auto;
   width: 930px;
   color: grey;
@@ -598,7 +695,7 @@ color:red;
 }}
 
 @media screen and (max-width: 440px) {
-.index_p h5{
+#index_p h5{
   height: auto;
   width: 300px !important;
   margin-bottom: 50px;
@@ -608,10 +705,11 @@ color:red;
   font-weight: bold;
   font-size: 12px;
   line-height: 17px;
+  padding-left: 10px;
 }}
 
 @media screen and (max-width: 990px) {
-.index_p h5{
+#index_p h5{
   height: auto;
   width: 437px;
   color: grey;
@@ -621,6 +719,7 @@ color:red;
   font-weight: bold;
   font-size: 12px;
   line-height: 17px;
+  padding-left: 10px;
 }}
 
 .title-pp{
@@ -635,26 +734,29 @@ color:red;
 }
 
 @media screen and (min-width: 991px) {
-.index_p h1{
+#index_p h1{
   height: auto;
   width: 930px;
   margin-bottom: 20px;
+  padding-left: 10px;
 
 }}
 
 @media screen and (max-width: 440px) {
-.index_p h1{
+#index_p h1{
   height: auto;
   width: 300px !important;
   margin-bottom: 20px;
+  padding-left: 10px;
 
 }}
 
 @media screen and (max-width: 990px) {
-.index_p h1{
+#index_p h1{
   height: auto;
   width: 437px;
   margin-bottom: 20px;
+  padding-left: 10px;
 
 }}
 
@@ -902,23 +1004,47 @@ background-color: white;
 padding: 60px
 }
 
-.avatar-p img{
+.plusinfo a{
+  color:red;
+  font-size: 14px;
+  font-family: cabin;
+}
+
+.plusinfo a:hover{
+  color:red;
+  font-size: 14px;
+  font-family: cabin;
+  text-decoration:none;
+}
+
+#avatar-p img{
  height:100px;
- width:100px;
+ width:100px !important;
   border-radius: 50%;
 }
 
-  .avatar-p p{
-  margin-bottom: 10px !important;
+  #avatar-p p{
+  margin-bottom: 0px !important;
   display: flex;
   flex-direction:column;
   justify-content: center !important;
   align-items: center;
 }
 
-  .avatar-p {
+.avatar-titre{
+  margin-bottom: 0px !important;
   display: flex;
-  margin-bottom: 10px !important;
+  font-family: 'Oswald', sans-serif !important;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size: 20px !important;
+}
+
+
+  #avatar-p {
+    margin: 40px;
+  display: flex;
+  margin-bottom: 0px !important;
   flex-direction:column;
   justify-content: center !important;
   align-items: center;
