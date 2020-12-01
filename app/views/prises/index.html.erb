@@ -8,12 +8,14 @@
 </div>
 <div class="index_p">
 <h1 class="title-p">Dernier Prise</h1>
+<% if @prise && @prise.last && @prise.last.video_p %>
   <iframe width="930" height="560"
     src="<%= @prise.last.video_p %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <% end %>
 
 <% if user_signed_in? %>
 <div class="btn btn-light btn-banner-p"><%= link_to "Ajouter un Prise", new_prise_path %></div>

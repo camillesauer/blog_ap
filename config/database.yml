@@ -26,7 +26,6 @@ development:
   database: blog_ap_development
 
 production:
-  <<: *default
   database: d8vf1l5nccjkjd
   username: padulopgteylwb
   password: 1a793da17a4e6617390085487bdc349ec7990d3af8703fcbf4e506ef315d5559
