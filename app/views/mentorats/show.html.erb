@@ -2,14 +2,17 @@
 <%= render "components/header" %>
 <br>
 <br>
+<div id="index_m">
 <div id="index_p">
 <h1 class="title-pp"><%= @mentorat.titre_m %></h1>
+<% if @mentorat.img_m1 != ""  %>
   <iframe width="930" height="560"
     src="<%= @mentorat.video_m %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+   <% end %>
   <br>
   <h1 class="title-pp">À PROPOS</h1>
   <% if @mentorat.paraph_m1 != ""  %>
@@ -60,7 +63,7 @@
   <h5><%= @mentorat.legend_m5 %></h5>
   <% end %>
 <br>
-  <h1 class="title-pp">INTERVENANTS</h1>
+  <h1 class="title-pp">ÉQUIPE</h1>
   <% if @mentorat.paraph_m4 != ""  %>
   <p><%= @mentorat.paraph_m4 %></p>
   <% end %>
@@ -210,7 +213,7 @@
 </div>
 </div>
 </div>
-
+</div>
 
 <br>
 <br>
