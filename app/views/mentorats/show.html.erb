@@ -1,1 +1,217 @@
-show.html.erb
+
+<%= render "components/header" %>
+<br>
+<br>
+<div id="index_p">
+<h1 class="title-pp"><%= @mentorat.titre_m %></h1>
+  <iframe width="930" height="560"
+    src="<%= @mentorat.video_m %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <br>
+  <h1 class="title-pp">À PROPOS</h1>
+  <% if @mentorat.paraph_m1 != ""  %>
+  <p><%= @mentorat.paraph_m1 %></p>
+  <% end %>
+  <br>
+  <% if @mentorat.img_m1 != ""  %>
+  <%= image_tag("#{@mentorat.img_m1}") %>
+  <% end %>
+<% if @mentorat.legend_m1 != ""  %>
+  <h5><%= @mentorat.legend_m1 %></h5>
+  <% end %>
+<br>
+  <br>
+  <% if @mentorat.paraph_m2 != ""  %>
+  <p><%= @mentorat.paraph_m2 %></p>
+  <% end %>
+  <br>
+  <% if @mentorat.img_m2 != ""  %>
+  <%= image_tag("#{@mentorat.img_m2}") %>
+  <% end %>
+  <% if @mentorat.legend_m2 != ""  %>
+  <h5><%= @mentorat.legend_m2 %></h5>
+  <% end %>
+  <br>
+  <% if @mentorat.paraph_m3 != ""  %>
+  <p><%= @mentorat.paraph_m3 %></p>
+  <% end %>
+  <br>
+  <% if @mentorat.img_m3 != ""  %>
+  <%= image_tag("#{@mentorat.img_m3}") %>
+  <% end %>
+  <% if @mentorat.legend_m3 != ""  %>
+  <h5><%= @mentorat.legend_m3 %></h5>
+  <% end %>
+  <br>
+  <% if @mentorat.img_m4 != ""  %>
+  <%= image_tag("#{@mentorat.img_m4}") %>
+  <% end %>
+  <% if @mentorat.legend_m4 != ""  %>
+  <h5><%= @mentorat.legend_m4 %></h5>
+  <% end %>
+  <br>
+   <% if @mentorat.img_m5 != ""  %>
+   <%= image_tag("#{@mentorat.img_m5}") %>
+   <% end %>
+   <% if @mentorat.legend_m5!= ""  %>
+  <h5><%= @mentorat.legend_m5 %></h5>
+  <% end %>
+<br>
+  <h1 class="title-pp">INTERVENANTS</h1>
+  <% if @mentorat.paraph_m4 != ""  %>
+  <p><%= @mentorat.paraph_m4 %></p>
+  <% end %>
+</div>
+
+<div  id="title-p">
+<div class="grid-avatar">
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m1 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m1}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m1 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m1%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m1 != ""  %>
+  <p><%= @mentorat.avatar_titre_m1%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m1 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m1%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m2 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m2}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m2 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m2%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m2 != ""  %>
+  <p><%= @mentorat.avatar_titre_m2%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m2 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m2%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m3 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m3}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m3 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m3%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m3 != ""  %>
+  <p><%= @mentorat.avatar_titre_m3%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m3 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m3%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m4 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m4}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m4 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m4%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m4 != ""  %>
+  <p><%= @mentorat.avatar_titre_m4%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m4 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m4%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m5 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m5}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m5 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m5%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m5 != ""  %>
+  <p><%= @mentorat.avatar_titre_m5%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m5 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m5%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m6 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m6}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m6 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m6%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m6 != ""  %>
+  <p><%= @mentorat.avatar_titre_m6%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m6 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m6%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m7 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m7}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m7 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m7%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m7 != ""  %>
+  <p><%= @mentorat.avatar_titre_m7%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m7 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m7%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m8 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m8}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m8 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m8%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m8 != ""  %>
+  <p><%= @mentorat.avatar_titre_m8%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m8 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m8%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m9 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m9}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m9 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m9%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m9 != ""  %>
+  <p><%= @mentorat.avatar_titre_m9%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m9 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m9%></div>
+  <% end %>
+</div>
+<div id="avatar-p">
+  <% if @mentorat.avatar_img_m10 != ""  %>
+  <%= image_tag("#{@mentorat.avatar_img_m10}") %>
+  <% end %>
+ <% if @mentorat.avatar_name_m10 != ""  %>
+  <p class="avatar-titre"><%= @mentorat.avatar_name_m10%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m10 != ""  %>
+  <p><%= @mentorat.avatar_titre_m10%></p>
+  <% end %>
+   <% if @mentorat.avatar_titre_m10 != ""  %>
+  <div class="plusinfo"><%= link_to "En savoir plus", @mentorat.avatar_url_m10%></div>
+  <% end %>
+</div>
+</div>
+</div>
+
+
+<br>
+<br>
+<%= render "components/footer" %>

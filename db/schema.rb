@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_30_105336) do
+ActiveRecord::Schema.define(version: 2020_12_02_084739) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,21 @@ ActiveRecord::Schema.define(version: 2020_11_30_105336) do
     t.text "lien_url1_a"
     t.text "lien_url2_a"
     t.text "video_a"
+    t.text "question1"
+    t.text "question2"
+    t.text "question3"
+    t.text "question4"
+    t.text "question5"
+    t.text "question6"
+    t.text "question7"
+    t.text "question8"
+    t.text "question9"
+    t.text "question10"
+    t.text "paraph6_a"
+    t.text "paraph7_a"
+    t.text "paraph8_a"
+    t.text "paraph9_a"
+    t.text "paraph10_a"
   end
 
   create_table "mentorats", force: :cascade do |t|
@@ -119,6 +134,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_105336) do
     t.text "lieu_m"
     t.text "lien_url1_m"
     t.text "lien_url2_m"
+    t.text "video_m2"
   end
 
   create_table "pages", force: :cascade do |t|

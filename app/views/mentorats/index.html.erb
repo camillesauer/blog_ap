@@ -6,4 +6,35 @@
 <h2 class="t_bandeau">Un artiste porteur de projet culturel
 soutenu pendant 1 an.</h2>
 </div>
+
+
+<div class="index_2">
+<% if user_signed_in? %>
+<div class="btn btn-light btn-banner-p"><%= link_to "Ajouter un mentorat", new_mentorat_path %></div>
+<% end %>
+
+<div class="display-grid-card">
+  <% @mentorat.each do |mentorat| %>
+    <div class="prise">
+      <% if user_signed_in? %>
+        <div class ="">
+          <%= link_to 'Supprimer', mentorat_path(mentorat),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+          <%= link_to "Editer", edit_mentorat_path(mentorat.id)%>
+        </div>
+      <% end %>
+          <div class="linear">
+            <%= link_to(image_tag("#{mentorat.img_m1}", alt: "Art Prise, Place à la culture de demain!"), mentorat_path(mentorat.id)) %>
+            <h1><%= mentorat.titre_m %></h1>
+            <div class="info_p">
+            <h4 class=""><%= mentorat.date_m %></h4>
+            <h5 class=""><%= mentorat.lieu_m %></h5>
+            </div>
+          </div>
+    </div>
+     <% end %>
+  </div>
+
+</div>
 <%= render "components/footer" %>
