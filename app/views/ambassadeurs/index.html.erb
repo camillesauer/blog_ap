@@ -6,4 +6,34 @@
 <h2 class="t_bandeau">Portraits d’artistes engagés
 dans la culture.</h2>
 </div>
+
+<div class="index_2">
+<% if user_signed_in? %>
+<div class="btn btn-light btn-banner-p"><%= link_to "Ajouter un ambassadeur", new_ambassadeur_path %></div>
+<% end %>
+
+<div class="display-grid-card">
+  <% @ambassadeur.each do |ambassadeur| %>
+    <div class="prise">
+      <% if user_signed_in? %>
+        <div class ="">
+          <%= link_to 'Supprimer', ambassadeur_path(ambassadeur),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+          <%= link_to "Editer", edit_ambassadeur_path(ambassadeur.id)%>
+        </div>
+      <% end %>
+          <div class="linear">
+            <%= link_to(image_tag("#{ambassadeur.img1_a}", alt: "Art Prise, Place à la culture de demain!"), ambassadeur_path(ambassadeur.id)) %>
+            <h1><%= ambassadeur.titre_m %></h1>
+            <div class="info_p">
+            <h4 class=""><%= ambassadeur.date_a %></h4>
+            <h5 class=""><%= ambassadeur.lieu_a %></h5>
+            </div>
+          </div>
+    </div>
+     <% end %>
+  </div>
+
+</div>
 <%= render "components/footer" %>

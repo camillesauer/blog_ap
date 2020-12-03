@@ -363,11 +363,35 @@ display: flex;
   align-items: center;
 }
 }
-@media (max-width: 950px) {
+
+@media (max-width: 400px) {
+.formules{
+width: 305px !important;
+padding: 40px !important;
+}}
+
+@media (max-width: 400px) {
+.p-info-deux{
+font-size: 19px;
+}}
+
+@media (max-width: 400px) {
+.formules p{
+font-size: 19px !important;
+}}
+
+
+@media screen and (min-width: 401px) and (max-width: 950px) {
 .formules{
 width: auto !important;
 padding: 40px !important;
 }}
+
+@media (max-width: 400px) {
+.p-info{
+width: 310px !important;
+}}
+
 
 .btn-banner{
   width: 115px;
@@ -958,6 +982,7 @@ color:white !important;
 font-size: 18px;
 line-height: 30px;
 padding: 30px;
+font-weight:bold;
 }
 
 .p-info-deux{

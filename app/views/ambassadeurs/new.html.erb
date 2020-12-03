@@ -1,1 +1,69 @@
-new.html.erb
+
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@ambassadeur) do |f| %>
+
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+          <h3 class="title-new">Ajouter un Ambassadeur</h3>
+
+          <%= f.input :nom_ambassadeur %>
+          <%= f.input :nom_auteur_a %>
+          <%= f.input :titre_a %>
+          <%= f.input :sous_titre_a %>
+          <%= f.input :avatar_img_a %>
+           <%= f.input :date_a %>
+           <%= f.input :lieu_a %>
+           <%= f.input :lien_url1_a %>
+           <%= f.input :lien_url2_a %>
+           <%= f.input :video_a %>
+           <%= f.input :img1_a %>
+           <%= f.input :legend1_a %>
+           <%= f.input :img2_a %>
+           <%= f.input :legend2_a %>
+           <%= f.input :img3_a %>
+           <%= f.input :legend3_a %>
+           <%= f.input :img4_a %>
+           <%= f.input :legend4_a %>
+           <%= f.input :img5_a %>
+           <%= f.input :legend5_a %>
+           <%= f.input :img6_a %>
+           <%= f.input :legend6_a %>
+           <%= f.input :img7_a %>
+           <%= f.input :legend7_a %>
+           <%= f.input :img8_a %>
+           <%= f.input :legend8_a %>
+           <%= f.input :img9_a %>
+           <%= f.input :legend9_a %>
+           <%= f.input :img10_a %>
+           <%= f.input :legend10_a %>
+           <%= f.input :question1 %>
+           <%= f.input :paraph1_a %>
+           <%= f.input :question2 %>
+           <%= f.input :paraph2_a %>
+           <%= f.input :question3 %>
+           <%= f.input :paraph3_a %>
+           <%= f.input :question4 %>
+           <%= f.input :paraph4_a %>
+           <%= f.input :question5 %>
+           <%= f.input :paraph5_a %>
+           <%= f.input :question6 %>
+           <%= f.input :paraph6_a %>
+           <%= f.input :question7 %>
+           <%= f.input :paraph7_a %>
+           <%= f.input :question8 %>
+           <%= f.input :paraph8_a %>
+           <%= f.input :question9 %>
+           <%= f.input :paraph9_a %>
+           <%= f.input :question10 %>
+           <%= f.input :paraph10_a %>
+
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.button :submit, class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
