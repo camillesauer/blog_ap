@@ -1,3 +1,4 @@
+<div class="d-flex container justify-content-center display-bubble">
   <%= simple_form_for(@ambassadeur) do |f| %>
          <%= f.error_notification %>
          <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
@@ -34,6 +35,7 @@
            <%= f.input :legend9_a %>
            <%= f.input :img10_a %>
            <%= f.input :legend10_a %>
+           <%= f.input :introduction_a %>
            <%= f.input :question1 %>
            <%= f.input :paraph1_a %>
            <%= f.input :question2 %>
@@ -63,3 +65,4 @@
        <% end %>
 </div>
 </div>
+

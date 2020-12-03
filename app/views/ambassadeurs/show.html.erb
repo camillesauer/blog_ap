@@ -1,1 +1,172 @@
-show.html.erb
+
+<%= render "components/header" %>
+<div id="index_m index_">
+<div class="card-category image1 image2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @ambassadeur.img1_a %>)">
+  <% if @ambassadeur.avatar_img_a != ""  %>
+  <%= image_tag("#{@ambassadeur.avatar_img_a}") %>
+  <% end %>
+  </div>
+</div>
+<div id="index_m">
+<div id="index_p">
+<h1 class="title-pp" id="ambassadeur-name"><%= @ambassadeur.nom_ambassadeur %></h1>
+<p id="paraph-ambassadeur">Par - <%= @ambassadeur.nom_auteur_a %>, le <%= @ambassadeur.date_a %></p>
+<% if @ambassadeur.video_a != ""  %>
+  <iframe width="930" height="560"
+    src="<%= @ambassadeur.video_a %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+   <% end %>
+  <% if @ambassadeur.introduction_a != ""  %>
+  <p class="intro"><%= @ambassadeur.introduction_a %></p>
+  <% end %>
+  <% if @ambassadeur.question1 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question1 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph1_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph1_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img1_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img1_a}") %>
+  <% end %>
+<% if @ambassadeur.legend1_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend1_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question2 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question2 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph2_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph2_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img2_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img2_a}") %>
+  <% end %>
+  <% if @ambassadeur.legend2_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend2_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question3 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question3 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph3_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph3_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img3_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img3_a}") %>
+  <% end %>
+  <% if @ambassadeur.legend3_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend3_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question4 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question4 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph4_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph4_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img4_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img4_a}") %>
+  <% end %>
+  <% if @ambassadeur.legend4_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend4_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question5 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question5 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph5_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph5_a %></p>
+  <% end %>
+  <br>
+   <% if @ambassadeur.img5_a != ""  %>
+   <%= image_tag("#{@ambassadeur.img5_a}") %>
+   <% end %>
+   <% if @ambassadeur.legend5_a!= ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend5_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question6 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question6 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph6_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph6_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img6_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img6_a}") %>
+  <% end %>
+<% if @ambassadeur.legend6_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend6_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question7 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question7 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph7_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph7_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img7_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img7_a}") %>
+  <% end %>
+  <% if @ambassadeur.legend7_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend7_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question8 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a" class="question_a"><%= @ambassadeur.question8 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph8_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph8_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img8_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img8_a}") %>
+  <% end %>
+  <% if @ambassadeur.legend8_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend8_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question9 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question9 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph9_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph9_a %></p>
+  <% end %>
+  <br>
+  <% if @ambassadeur.img9_a != ""  %>
+  <%= image_tag("#{@ambassadeur.img9_a}") %>
+  <% end %>
+  <% if @ambassadeur.legend9_a != ""  %>
+  <h5 id="paraph-ambassadeur"><%= @ambassadeur.legend9_a %></h5>
+  <% end %>
+  <br>
+  <% if @ambassadeur.question10 != ""  %>
+  <p id="paraph-ambassadeur" class="question_a"><%= @ambassadeur.question10 %></p>
+  <% end %>
+  <% if @ambassadeur.paraph10_a != ""  %>
+  <p id="paraph-ambassadeur"><%= @ambassadeur.paraph10_a %></p>
+  <% end %>
+  <br>
+   <% if @ambassadeur.img10_a != ""  %>
+   <%= image_tag("#{@ambassadeur.img5_a}") %>
+   <% end %>
+   <% if @ambassadeur.legend10_a!= ""  %>
+  <h5><%= @ambassadeur.legend10_a %></h5>
+  <% end %>
+</div>
+
+
+</div>
+
+
+<br>
+<br>
+<%= render "components/footer" %>

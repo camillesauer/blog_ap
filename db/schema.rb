@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_02_084739) do
+ActiveRecord::Schema.define(version: 2020_12_03_094938) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 2020_12_02_084739) do
     t.text "paraph8_a"
     t.text "paraph9_a"
     t.text "paraph10_a"
+    t.text "introduction_a"
   end
 
   create_table "mentorats", force: :cascade do |t|

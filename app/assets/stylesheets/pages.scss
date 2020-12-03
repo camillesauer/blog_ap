@@ -1,5 +1,8 @@
 
-
+.form-inputs textarea{
+  border-radius: 20px;
+  border-color: red;
+}
 
 .footer {
   background: white;
@@ -467,6 +470,53 @@ width: 310px !important;
 }
 }
 
+.intro{
+  font-weight: bold;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px red solid;
+}
+
+.image2 img {
+    width: 120px;
+    border-radius: 300px;
+    position: absolute;
+    bottom: -43px;
+    filter: grayscale(100%)
+}
+
+.img-avatar-a img{
+    bottom: 80px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 300px;
+    position: absolute;
+    filter: grayscale(100%)
+
+}
+
+@media screen and (max-width: 440px) {
+.img-avatar-a img{
+    bottom: 90px;
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    position: absolute;
+    filter: grayscale(100%)
+
+}}
+
+@media screen and (max-width: 440px) {
+.linear h6{
+  font-size: 18px !important;
+
+}}
 
 @media screen and (max-width: 440px) {
 #index_p iframe{
@@ -490,6 +540,23 @@ width: 310px !important;
   padding-bottom: 50px;
   height: auto;
   background-color: #FA0606;
+}
+
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 245px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 50px;
 }
 
 .t_bandeau{
@@ -555,6 +622,21 @@ display: flex;
   align-items: center;
 
 }
+
+
+#index_a{
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: none !important;
+}
+
+#index_a h1{
+display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
 .index_2{
   display: flex;
   flex-direction: column;
@@ -786,6 +868,147 @@ color:red;
 
 }}
 
+
+
+@media screen and (max-width: 440px) {
+#index_p iframe{
+  border-radius:20px;
+  height: 250px;
+  width: 300px !important;
+  text-align:center;
+  margin-bottom: 50px;
+}}
+
+@media screen and (max-width: 990px) {
+#index_p iframe{
+  border-radius:20px;
+  height: 300px;
+  width: 437px;
+  text-align:center;
+  margin-bottom: 50px;
+}}
+
+@media screen and (min-width: 991px) {
+#index_p iframe{
+  border-radius:20px;
+  height: 480px;
+  width: 930px;
+  text-align:center;
+  margin-bottom: 50px;
+}}
+
+@media screen and (min-width: 991px) {
+#index_p img{
+  border-radius:20px;
+  height: 480px;
+  width: 930px;
+  text-align:center;
+  margin-bottom: 20px;
+  object-fit: cover;
+}}
+
+@media screen and (max-width: 440px) {
+#index_p img{
+  border-radius:20px;
+  height: 250px;
+  width: 300px !important;
+  text-align:center;
+  margin-bottom: 20px;
+  object-fit: cover;
+}}
+
+@media screen and (max-width: 990px) {
+#index_p img{
+  border-radius:20px;
+  height: 300px;
+  width: 437px;
+  text-align:center;
+  margin-bottom: 20px;
+  object-fit: cover;
+}}
+
+@media screen and (min-width: 991px) {
+#index_p p{
+  height: auto;
+  width: 930px;
+  margin-bottom: 50px;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+}}
+
+@media screen and (max-width: 440px) {
+#index_p p{
+  height: auto;
+  width: 300px !important;
+  margin-bottom: 50px;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+}}
+
+@media screen and (max-width: 990px) {
+#index_p p{
+  height: auto;
+  width: 437px;
+  margin-bottom: 50px;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+}}
+
+
+@media screen and (min-width: 991px) {
+#index_p h5{
+  height: auto;
+  width: 930px;
+  color: grey;
+  margin-bottom: 50px;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+}}
+
+@media screen and (max-width: 440px) {
+#index_p h5{
+  height: auto;
+  width: 300px !important;
+  margin-bottom: 50px;
+  font-family: Cabin;
+  color: grey;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  padding-left: 10px;
+}}
+
+@media screen and (max-width: 990px) {
+#index_p h5{
+  height: auto;
+  width: 437px;
+  color: grey;
+  margin-bottom: 50px;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  padding-left: 10px;
+}}
+
+
 @media screen and (min-width: 991px) {
   .title-p{
     font-size: 30px;
@@ -802,12 +1025,29 @@ color:red;
 }
 }
 
+#paraph-ambassadeur{
+  margin-bottom: 20px !important;
+}
+
 @media screen and (min-width: 1500px) {
 .display-grid-card{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
+}
+
+#ambassadeur-name{
+  margin-top: 20px;
+  font-size: 40px;
+line-height: 50px;
+width: auto !important;
+}
+
+#ambassadeur-subname{
+  font-size: 40px;
+line-height: 50px;
+width: auto !important;
 }
 
 .linear h1{
@@ -821,6 +1061,32 @@ color: white;
 font-size: 24px;
 text-transform: uppercase;
 }
+
+.flex_a{
+  bottom: 100px;
+  position: relative;
+  left: 150px;
+}
+
+@media screen and (max-width: 440px) {
+  .flex_a{
+  bottom: 100px;
+  position: relative;
+  left: 130px;
+}}
+
+
+.linear h6 {
+
+    font-family: 'Poppins';
+    line-height: 30px;
+    margin-right: 20px;
+    font-style: normal;
+    font-style: uppercase !important;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    }
 
 @media screen and (max-width: 440px) {
   .title-p{
@@ -867,6 +1133,21 @@ text-transform: uppercase;
 }
 
 
+
+#info_a{
+
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: regular;
+  color: white;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 440px) {
+#info_a{
+  font-size: 15px;
+}}
+
 .info_p{
   display:flex !important;
   justify-content:space-between !important;
@@ -892,6 +1173,15 @@ text-transform: uppercase;
   text-transform: uppercase;
   display: flex !important;
   margin: 20px;
+}
+
+.question_a{
+  font-family: 'Oswald', sans-serif !important;
+  line-height: 30px !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+
 }
 
 .btn-banner-p a {

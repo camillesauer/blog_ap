@@ -1,9 +1,5 @@
 
-<div class="">
-  <div class="">
-
-
-
+<div class="d-flex container justify-content-center display-bubble">
     <%= simple_form_for(@prise) do |f| %>
          <%= f.error_notification %>
          <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
@@ -80,4 +76,4 @@
          </div>
        <% end %>
 </div>
-</div>
+
