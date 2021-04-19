@@ -75,7 +75,21 @@ font-weight:bold;
 
 }
 
-@media (min-width: 399px) {
+@media (max-width: 599px) {
+.description{
+  font-size: 18px;
+  text-align:center;
+  line-height: 32px;
+  width: 398px;
+  height: 196px;
+  color: #FFFFFF;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  margin: 60px;
+}}
+
+@media (min-width: 600px) {
 .description{
   font-size: 18px;
   line-height: 32px;
@@ -114,7 +128,7 @@ font-weight:bold;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  margin: 40px !important;
+  margin: 40px ;
   font-size: 40px;
 }}
 
@@ -137,7 +151,19 @@ font-weight:bold;
   align-items: center;
 }}
 
-@media (min-width: 400px) {
+@media (max-width: 599px) {
+.title{
+  text-align:center;
+  font-size: 60px;
+  line-height: 108px;
+  margin: 50px;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+}}
+
+@media (min-width: 600px) {
 .title{
   font-size: 72px;
   line-height: 108px;
