@@ -510,6 +510,8 @@ width: 310px !important;
 }
 
 .image2 img {
+    height: 120px;
+    object-fit: cover;
     width: 120px;
     border-radius: 300px;
     position: absolute;
