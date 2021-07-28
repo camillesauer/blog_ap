@@ -1398,7 +1398,8 @@ padding: 60px
 #avatar-p img{
  height:100px;
  width:100px !important;
-  border-radius: 50%;
+ border-radius: 50%;
+ object-fit:cover;
 }
 
   #avatar-p p{
