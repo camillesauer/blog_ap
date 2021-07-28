@@ -5,12 +5,14 @@
 <div id="index_m">
 <div id="index_p">
 <h1 class="title-pp"><%= @prise.titre_p %></h1>
+  <% if @prise.video_p  != ""  %>
   <iframe width="930" height="560"
     src="<%= @prise.video_p %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <% end %>
   <br>
   <h1 class="title-pp">INTRODUCTION</h1>
   <% if @prise.introduction_p1 != ""  %>

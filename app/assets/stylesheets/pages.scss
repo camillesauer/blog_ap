@@ -472,7 +472,7 @@ width: 310px !important;
   height: 365px;
   border-radius:20px;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(60%);
 }
 
 @media screen and (max-width: 440px) {
@@ -545,12 +545,17 @@ width: 310px !important;
     filter: grayscale(100%)
 }
 
+.text label{
+  display:none;
+}
+
 .img-avatar-a img{
     bottom: 80px;
     margin-left: 30px;
     width: 100px;
     height: 100px;
     border-radius: 300px;
+    object-fit: cover;
     position: absolute;
     filter: grayscale(100%)
 
